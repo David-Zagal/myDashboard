@@ -1,8 +1,11 @@
 import { Component, WritableSignal, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+// import { Grade } from '@interfaces/grade.type';
 import { Grade } from '../../../interfaces/grade.type';
-import { TitleComponent } from '@shared/title/title.component';
+
+// import { TitleComponent } from '@shared/title/title.component';
+import { TitleComponent } from '../../../shared/title/title.component';
 
 @Component({
 	standalone: true,

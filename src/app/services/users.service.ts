@@ -2,8 +2,10 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable, computed, inject, signal } from '@angular/core';
 import { delay, map } from 'rxjs';
 
-import type { UserResponse, UsersResponse } from '@interfaces/req-response.interface';
-import { State } from '@interfaces/state.interface';
+// import type { UserResponse, UsersResponse } from '@interfaces/req-response.interface';
+// import { State } from '@interfaces/state.interface';
+import { UserResponse, UsersResponse } from '../interfaces/req-response.interface';
+import { State } from '../interfaces/state.interface';
 
 @Injectable({
 	providedIn: 'root'
