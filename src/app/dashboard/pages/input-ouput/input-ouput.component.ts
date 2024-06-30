@@ -13,7 +13,7 @@ import { ProductCardComponent } from './ui/product-card/product-card.component';
 	templateUrl: './input-ouput.component.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export default class InputOuputComponent  implements OnDestroy {
+export default class InputOuputComponent implements OnDestroy {
 
 	public products = signal<Product[]> ([
 		{
@@ -41,6 +41,14 @@ export default class InputOuputComponent  implements OnDestroy {
 		}),
 		take (7),
 	).subscribe ();
+
+	public updateProduct (product: Product, newQuantity: number) {
+		this.products.update ((products) =>
+			products.map ((p) =>
+				p.id === product.id ? { ...p, quantity: newQuantity } : p
+			)
+		);
+	}
 
 	ngOnDestroy (): void {
 		this.intervalSubscription.unsubscribe ();
