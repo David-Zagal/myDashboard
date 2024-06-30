@@ -4,12 +4,10 @@ import { ActivatedRoute } from '@angular/router';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { switchMap } from 'rxjs';
 
-// import { TitleComponent } from '@shared/title/title.component';
-// import { UsersService } from '@services/users.service';
-import { UsersService } from '../../../services/users.service';
-import { TitleComponent } from '../../../shared/title/title.component';
-
-
+import { TitleComponent } from '@shared/title/title.component';
+import { UsersService } from '@services/users.service';
+// import { UsersService } from '../../../services/users.service';
+// import { TitleComponent } from '../../../shared/title/title.component';
 
 @Component({
 	standalone: true,

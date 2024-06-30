@@ -2,8 +2,8 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Route, RouterModule } from '@angular/router';
 
-// import { routes } from '@routes';
-import { routes } from '../../app.routes';
+import { routes } from '@routes';
+// import { routes } from '../../app.routes';
 
 @Component({
 	selector: 'shared-side-menu',

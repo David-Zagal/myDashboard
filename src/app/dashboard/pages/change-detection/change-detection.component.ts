@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
 
-// import { TitleComponent } from '@shared/title/title.component';
-import { TitleComponent } from '../../../shared/title/title.component';
+import { TitleComponent } from '@shared/title/title.component';
+// import { TitleComponent } from '../../../shared/title/title.component';
 
 @Component({
 	standalone: true,
-	imports: [CommonModule, TitleComponent],
+	imports: [ CommonModule, TitleComponent ],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	template: `
 		<shared-title [title]="currentFramework ()" />
